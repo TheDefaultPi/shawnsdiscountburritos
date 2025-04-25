@@ -1,31 +1,89 @@
 <!DOCTYPE html>
-<html>
-<title>Shawn's Burritos</title>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shawn's Burritos</title>
   <link rel="icon" href="iconburrito.jpg" type="image/x-icon">
-<style>
-body {
-  background-color: beige;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdf6e3;
+      color: #333;
+    }
 
-h1 {
-  color: black;
-  text-align: center;
-}
+    header {
+      background-color: #a0522d;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-</style>
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .promo {
+      background-color: #ffe4b5;
+      padding: 10px;
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .why {
+      font-size: 1.2em;
+      margin-top: 30px;
+    }
+
+    footer {
+      background-color: #a0522d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  
-  <h1>Welcome to Shawns Discount Burritos</h1>
-<p>Use promocode:"shawn2025" for 20% off from June 5-10</p>
-    <img src="shawnsdiscountburritos.jpg" alt="Sexy Burrito" class="center">
-       <p>why shawnsdiscountburritos is good?</p>
-   <p>will do later</p>
+  <header>
+    <h1>Shawn's Discount Burritos</h1>
+    <p>Ridiculously tasty. Shockingly cheap.</p>
+  </header>
 
+  <div class="promo">
+  Use promocode: <strong>"shawn2025"</strong> for 20% off! <br>
+    <em>Valid June 5–10</em>
+  </div>
+
+  <div class="container">
+    <img src="shawnsdiscountburritos.jpg" alt="Delicious Burrito">
+
+    <div class="why">
+      <h2>Why Shawn's Burritos?</h2>
+      <ul>
+        <li>Fresh ingredients hand-wrapped daily</li>
+        <li>Legendary hot sauce (no cap 🔥)</li>
+        <li>Massive portions at discount prices</li>
+        <li>Locally owned and community-loved</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
