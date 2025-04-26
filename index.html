@@ -23,24 +23,33 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
       flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .logo {
-      height: 100px; /* Bigger logo */
+      height: 120px;
       width: auto;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      flex-shrink: 0;
     }
 
     .header-text {
-      text-align: center;
+      text-align: left;
     }
 
     h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
+    }
+
+    .header-text p {
+      margin-top: 8px;
+      font-size: 1.4em;
+      font-weight: 300;
     }
 
     .promo {
@@ -70,7 +79,7 @@
       margin-top: 30px;
     }
 
-    .menu h2 {
+    .menu h2, .drink h2 {
       margin-bottom: 10px;
     }
 
@@ -216,7 +225,6 @@
       </div>
     </div>
 
-    <!-- Contact Section -->
     <div class="container center-text">
       <h2>Contact Us</h2>
       <p>Got questions or craving burritos? We’d love to hear from you!</p>
