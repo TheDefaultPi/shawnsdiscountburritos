@@ -16,33 +16,35 @@
     header {
       background-color: #a0522d;
       padding: 20px;
+      text-align: center;
       color: white;
+      position: relative;
     }
 
     .header-content {
+      position: relative;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: flex-start; /* Push logo and text to the left */
-      gap: 30px;
-      flex-wrap: wrap;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding-left: 20px; /* Add a little space on the left */
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      height: 60px;
+      width: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
 
     .header-text {
-      text-align: left;
+      text-align: center;
     }
 
     h1 {
       margin: 0;
-      font-size: 3em;
-    }
-
-    .header-text p {
-      margin-top: 8px;
-      font-size: 1.4em;
-      font-weight: 300;
+      font-size: 2.5em;
     }
 
     .promo {
@@ -72,11 +74,11 @@
       margin-top: 30px;
     }
 
-    .menu h2, .drink h2 {
+    .menu h2 {
       margin-bottom: 10px;
     }
 
-    .menu-item, .drink-item {
+    .menu-item {
       background-color: #fff8e1;
       border: 1px solid #e0c097;
       border-radius: 8px;
@@ -86,14 +88,36 @@
       overflow: hidden;
     }
 
-    .menu-item img, .drink-item img {
+    .menu-item img {
       width: 80px;
       float: right;
       border-radius: 5px;
       margin-left: 10px;
     }
 
-    .menu-item h3, .drink-item h3 {
+    .menu-item h3 {
+      margin: 0 0 5px;
+      color: #a0522d;
+    }
+
+    .drink-item {
+      background-color: #fff8e1;
+      border: 1px solid #e0c097;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    .drink-item img {
+      width: 80px;
+      float: right;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+
+    .drink-item h3 {
       margin: 0 0 5px;
       color: #a0522d;
     }
@@ -200,6 +224,7 @@
         <h3>Shawn's Burrito - $8.99</h3>
         <p>Salsa, cheese, black beans, Asian rice, Mexican rice.</p>
       </div>
+
     </div>
 
     <div class="drink">
@@ -216,8 +241,10 @@
         <h3>Fanta - $0.99</h3>
         <p>Fanta</p>
       </div>
+
     </div>
 
+    <!-- Contact Section -->
     <div class="container center-text">
       <h2>Contact Us</h2>
       <p>Got questions or craving burritos? We’d love to hear from you!</p>
@@ -227,6 +254,7 @@
         Source Code
       </button>
     </div>
+
   </div>
 
   <footer>
