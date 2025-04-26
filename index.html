@@ -22,11 +22,12 @@
     .header-content {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start; /* Push logo and text to the left */
       gap: 30px;
       flex-wrap: wrap;
       max-width: 1200px;
       margin: 0 auto;
+      padding-left: 20px; /* Add a little space on the left */
     }
 
     .logo {
@@ -35,6 +36,7 @@
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       flex-shrink: 0;
+      margin-right: 20px; /* Add space between logo and text */
     }
 
     .header-text {
